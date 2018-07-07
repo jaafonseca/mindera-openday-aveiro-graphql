@@ -3,6 +3,7 @@ const express_graphql = require('express-graphql');
 const {GraphQLSchema, GraphQLObjectType, GraphQLInt, GraphQLList, GraphQLString, GraphQLBoolean} = require('graphql');
 const Mockdata = require('./mock');
 
+
 const BookType = new GraphQLObjectType({
   name: 'BookType',
   description: 'Describes a book',
@@ -20,6 +21,8 @@ const BookType = new GraphQLObjectType({
   })
 });
 
+
+
 const AuthorType = new GraphQLObjectType({
   name: 'AuthorType',
   description: 'Describes an author',
@@ -29,6 +32,7 @@ const AuthorType = new GraphQLObjectType({
     }
   })
 });
+
 
 const QueryType = new GraphQLObjectType({
     name: 'Query',
